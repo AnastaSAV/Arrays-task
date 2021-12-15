@@ -4,7 +4,7 @@
 function stringMutant(firstWord, secondWord, string) {
 	string = string.split(' ');
 	console.log(string);
-	let newArray = [];
+	let newArray;
 	let consilience = false;
 	for(let i = 0; i < string.length; i++) {
 		if (string.includes(firstWord) && string.includes(secondWord)) {
@@ -13,7 +13,7 @@ function stringMutant(firstWord, secondWord, string) {
 			// console.log(array.indexOf(secondWord));
 		 string.splice(5, 1);
 		 string.splice (26, 1);
-		 newArray = string;
+		 newArray = (string.join(' '));
 		}
 		else {
 			consilience = false;
